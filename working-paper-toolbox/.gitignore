@@ -1,0 +1,32 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+
+# ---- PyInstaller 产物 ----
+build/
+dist/
+_qt_conf_tmp
+
+# ---- 运行日志 ----
+签章页工具/logs/
+比较文件夹内容/logs/
+替换底稿内容/logs/
+底稿pdf材料/logs/
+
+# ---- 本地用户设置 ----
+.zcode/gui_settings.json
+
+
+# ---- IDE / 系统杂项 ----
+.omo/
+~$*
+Thumbs.db
+
+# ---- 运行产物：提取打印文件（文件名含真实主体，不入库）----
+比较文件夹内容/打印文件/
+
+# ---- Agent 工作目录 ----
+.zcode/
+.workbuddy/
+.agents/
+.agent-tmp/

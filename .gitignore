@@ -1,0 +1,36 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# ---- 构建产物（体积大、可重建）----
+dist/
+build/
+_internal/
+
+# ---- 运行产物：含真实主体名/本机路径/印章件，禁止入库 ----
+logs/
+output/
+test_output/
+_qt_conf_tmp/
+打印文件/
+*.log
+~$*
+manifest.json
+
+# ---- 编辑器与 agent 工作目录 ----
+.vscode/
+.zcode/
+.workbuddy/
+.workbuddy-ai/
+.agents/
+.agent-tmp/
+.omo/
+
+# ---- 系统杂项 ----
+Thumbs.db
+.DS_Store
+*.tmp
+*.bak

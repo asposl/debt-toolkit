@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+
+# 打包产物
+build/
+dist/
+
+# 输出目录
+output/
+
+# 运行时用户数据（GUI 生成）
+GUI/custom_sites.json
+GUI/check_templates.json
+GUI/_ibdw_state.json
+
+# GUI 截图输出（按被查询主体命名，直接生成在 GUI/ 下，如「张三/」「xx/」）
+# 会随任务增长且含个人信息，不入库。
+# 做法：先排除 GUI/ 下所有子目录，再单独放行源码目录。
+# ★ 往 GUI/ 下新增源码目录时，务必在这里补一条 ! 放行规则，否则会被忽略。
+GUI/*/
+!GUI/modules/
+!GUI/views/
+!GUI/.vscode/
+
+# 验证码诊断/测试的落盘产物（截图、日志、DOM 快照，体积大且可再生）
+验证码/test_output/
+
+# Agent / 编辑器工作目录
+.workbuddy/
+.workbuddy-ai/
+.zcode/
+
+# 构建日志（含本机绝对路径）
+build_*.log
+
+# 归档诊断脚本与一次性调试产物
+验证码/_archive_diag/
+验证码/ab_eval/
+验证码/captcha_live_smoke/
+
+# Agent 工作目录
+.agents/
+.agent-tmp/
+.omo/
